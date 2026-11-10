@@ -1,0 +1,41 @@
+{
+  "name": "mi-primer-proyecto-android",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto Android con Ionic: multi-idioma (es/en/fr/de), fondo nine-patch y soporte multi-pantalla",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "ninepatch": "python tools/generar_nine_patch.py",
+    "android": "ng build && npx cap sync android && npx cap open android"
+  },
+  "dependencies": {
+    "@angular/animations": "~20.3.0",
+    "@angular/common": "~20.3.0",
+    "@angular/compiler": "~20.3.0",
+    "@angular/core": "~20.3.0",
+    "@angular/forms": "~20.3.0",
+    "@angular/platform-browser": "~20.3.0",
+    "@angular/router": "~20.3.0",
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/core": "^7.4.0",
+    "@capacitor/preferences": "^7.0.0",
+    "@ionic/angular": "^8.7.0",
+    "@ngx-translate/core": "^17.0.0",
+    "@ngx-translate/http-loader": "^17.0.0",
+    "ionicons": "^8.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular/build": "~20.3.0",
+    "@angular/cli": "~20.3.0",
+    "@angular/compiler-cli": "~20.3.0",
+    "@capacitor/cli": "^7.4.0",
+    "@ionic/angular-toolkit": "^12.0.0",
+    "typescript": "~5.8.0"
+  }
+}

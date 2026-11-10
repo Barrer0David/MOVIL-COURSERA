@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ 'APP.TITULO' | translate }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="elegirIdioma()" [attr.aria-label]="'IDIOMA.TITULO' | translate">
+        <ion-icon slot="start" name="language" />
+        {{ idioma.actual().toUpperCase() }}
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+  <app-fondo-nine-patch slot="fixed" (contenido)="zona.set($event)" />
+
+  @if (zona(); as z) {
+    <main
+      slot="fixed"
+      class="texto"
+      [style.left.px]="z.x"
+      [style.top.px]="z.y"
+      [style.width.px]="z.ancho"
+      [style.height.px]="z.alto"
+    >
+      <h1>{{ 'APP.SALUDO' | translate }}</h1>
+      <p>{{ 'APP.MENSAJE' | translate }}</p>
+    </main>
+  }
+</ion-content>

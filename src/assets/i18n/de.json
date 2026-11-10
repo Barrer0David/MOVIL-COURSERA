@@ -1,0 +1,12 @@
+{
+  "APP": {
+    "TITULO": "Mein erstes Android-Projekt",
+    "SALUDO": "Hallo Welt!",
+    "MENSAJE": "Willkommen in meiner ersten App"
+  },
+  "IDIOMA": {
+    "TITULO": "Sprache",
+    "DISPOSITIVO": "Gerätesprache",
+    "CANCELAR": "Abbrechen"
+  }
+}
